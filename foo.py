@@ -2,11 +2,6 @@ from webob import Request, Response
 
 from jinja2 import Environment, FileSystemLoader
 
-req = Request.blank('/index.html')
-req.host = 'localhost'
-req.accept = 'text/html'
-req.http_version = 'HTTP/1.1'
-
 assets = [
   'app.js',
   'react.js',
