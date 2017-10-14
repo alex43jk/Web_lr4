@@ -1,5 +1,7 @@
 from webob import Request, Response
 
+from jinja2 import Environment, FileSystemLoader
+
 req = Request.blank('/index.html')
 req.host = 'localhost'
 req.accept = 'text/html'
@@ -53,8 +55,6 @@ def app(environ, start_response):
 app = WsgiTopBottomMiddleware(app)
 
 req2 = Request.blank('/index.html')
-
-from jinja2 import Environment, FileSystemLoader
 
 env = Environment(loader=FileSystemLoader('.'))
 template = env.get_template('index.html')
