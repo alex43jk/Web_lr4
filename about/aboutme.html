@@ -1,1 +1,15 @@
-aboutme
+{% extends "../base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+    {% for style in styles %}
+        <link rel="stylesheet" href="/_static/{{ style }}"/>
+    {% endfor %}
+{% endblock %}
+
+{% block footer %}
+    {% for javascript in javascripts %}
+        <script src="/_static/{{ javascript }}"></script>
+    {% endfor %}
+{% endblock %}
