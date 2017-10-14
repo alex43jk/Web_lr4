@@ -4,12 +4,12 @@
 
 {% block head %}
     {% for style in styles %}
-    <link rel="stylesheet" href="/_static/{{ style }}"/>
+        <link rel="stylesheet" href="/_static/{{ style }}"/>
     {% endfor %}
 {% endblock %}
 
 {% block footer %}
     {% for javascript in javascripts %}
-    <script src="/_static/{{ javascript }}"></script>
+        <script src="/_static/{{ javascript }}"></script>
     {% endfor %}
 {% endblock %}
