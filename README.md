@@ -1,2 +1,2 @@
 # Web_lr4
-Web
+Шаблонизатор Jinja на Python.
